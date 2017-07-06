@@ -55,10 +55,10 @@ def writeDisplay(str, seconds = 0.5):
 
 def writeMarquee(str):
     str = str.rjust(len(str) + NUM_OF_DIGITS, " ")
-    str = str.ljust(len(str) + NUM_OF_DIGITS - 1, " ")
+    str = str.ljust(len(str) + NUM_OF_DIGITS, " ")
     strLen = len(str)
 
-    for i in range(strLen - NUM_OF_DIGITS + 1):
+    for i in range(strLen - NUM_OF_DIGITS):
         strWindow = str[i:i + NUM_OF_DIGITS]
         writeDisplay(strWindow)
 
