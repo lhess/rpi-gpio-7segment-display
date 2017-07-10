@@ -16,7 +16,7 @@ pBlue = GPIO.PWM(GPIO_PIN_BLUE, 100)
 GPIO.setup(GPIO_PIN_GREEN, GPIO.OUT)
 pGreen = GPIO.PWM(GPIO_PIN_GREEN, 100)
 
-pRGB = {pRed, pBlue, pGreen}
+pRGB = {pRed, pGreen, pBlue}
         
 try:
     while 1:
